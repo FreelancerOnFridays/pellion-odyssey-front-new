@@ -7,12 +7,12 @@ interface Props {
     children: React.ReactNode;
     buttonDescriptionStyle?: string;
     classname?: string
-    slug: string
+    slug?: string
 }
 
 export const Button: React.FC<Props> = ({ children, classname, slug }) => {
   return (
-    <Link href={slug} className={cn(style.button, classname)}>
+    <Link href={slug ?? '#'} className={cn(style.button, classname)}>
         {children}
     </Link>
   );
