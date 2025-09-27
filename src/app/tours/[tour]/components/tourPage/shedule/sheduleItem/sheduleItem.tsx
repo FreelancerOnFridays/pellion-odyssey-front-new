@@ -6,7 +6,7 @@ import { TourData } from "@/types/tour";
 type DayData = {
   dayNumber: number;
   title: string;
-  image: string;
+  image?: string;
   titleTwo?: string;
   description: string;
   activities: string[];
