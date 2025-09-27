@@ -13,6 +13,7 @@ import { fetchSanityData } from "@/utils/fetchSanityData";
 import { getAllGroupsQuery } from "@/lib/queries";
 
 const Page: React.FC = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [groups, setGroups] = React.useState<any[]>([]);
 
   React.useEffect(() => {
